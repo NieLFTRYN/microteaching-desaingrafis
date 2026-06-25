@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pendahuluan - Buku Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* BACK BUTTON (SAMA PERSIS DENGAN FORUM) */
+.back-icon{
+    position:fixed;
+    top:20px;
+    left:20px;
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:50%;
+
+    color:white;
+    font-size:22px;
+    text-decoration:none;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.3s;
+    z-index:1000;
+}
+
+.back-icon:hover{
+    background:rgba(124,58,237,0.4);
+    transform:scale(1.1);
+}
+
+/* BACKGROUND */
+.bg{
+    position:fixed;
+    inset:0;
+    background:
+    linear-gradient(rgba(15,23,42,.88),rgba(15,23,42,.92)),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    z-index:-1;
+}
+
+/* CONTAINER */
+.container{
+    max-width:900px;
+    margin:80px auto;
+    padding:50px;
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:25px;
+    backdrop-filter:blur(14px);
+    box-shadow:0 15px 50px rgba(0,0,0,0.4);
+}
+
+/* TITLE */
+h1{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+/* TEXT */
+p{
+    font-size:18px;
+    line-height:1.9;
+    opacity:0.9;
+    margin-bottom:18px;
+}
+
+/* HIGHLIGHT BOX */
+.highlight{
+    margin-top:25px;
+    padding:22px;
+    border-left:5px solid #7c3aed;
+    background:rgba(124,58,237,0.12);
+    border-radius:12px;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(124,58,237,0.4);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .container{
+        margin:40px 15px;
+        padding:30px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    p{
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- BACK BUTTON -->
+<a href="index.html" class="back-icon">←</a>
+
+<!-- BACKGROUND -->
+<div class="bg"></div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <h1>Pendahuluan</h1>
+
+    <p>
+        Perkembangan teknologi digital telah mengubah cara manusia dalam berkomunikasi dan menyampaikan informasi visual.
+        Desain grafis menjadi salah satu bidang yang paling berperan dalam era ini karena mampu menggabungkan elemen teks,
+        gambar, dan warna menjadi media komunikasi yang efektif.
+    </p>
+
+    <p>
+        Dalam pembelajaran multimedia, desain grafis tidak hanya berfungsi sebagai aspek estetika, tetapi juga sebagai alat
+        untuk menyampaikan pesan secara sistematis dan mudah dipahami oleh audiens.
+    </p>
+
+    <p>
+        CorelDRAW sebagai salah satu perangkat lunak desain berbasis vektor banyak digunakan dalam dunia pendidikan dan industri
+        karena kemampuannya dalam menghasilkan desain yang presisi, fleksibel, dan berkualitas tinggi.
+    </p>
+
+    <div class="highlight">
+        Buku digital ini disusun untuk membantu siswa Sekolah Menengah Kejuruan (Multimedia & DKV) memahami dasar hingga praktik desain grafis menggunakan CorelDRAW
+        secara terstruktur, interaktif, dan aplikatif.
+    </div>
+
+    <a href="materi.html" class="btn">Lanjut ke Materi</a>
+
+</div>
+
+</body>
+</html>
